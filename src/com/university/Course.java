@@ -44,7 +44,7 @@ public class Course {
     }
 
     public void enrollStudent(Student student){
-        if(student.getDepartment().equals(department)){
+        if(student != null && student.getDepartment().equals(department)){
             students.add(student);
         }
     }
